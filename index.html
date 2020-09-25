@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sidramesh Patil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Exo&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+     <script>
+         let counter = 0
+         function notify(ele){
+             if(counter === 0){
+            let parentDiv = ele.parentElement
+            let notice = document.createElement("p")
+            notice.setAttribute("style", "color:red; font-family: Arial, Helvetica, sans-serif;font-size:20px")
+            let node = document.createTextNode("This project's code hasn't been pushed yet");
+            notice.appendChild(node)
+            parentDiv.appendChild(notice)
+            counter++
+             }
+         }
+     </script>
+</head>
+
+<body>
+
+    <section class="my_intro">
+        <div class="container welcome_container">
+            <div class="profile_image">
+                <img src="images/prof_image.jpg" alt="">
+            </div>
+            <div class="my_intro_title">
+
+                <h1 class="hi_title">Hi,</h1>
+                <h1 class="my_name_is">My name is </h1>
+                <h1 class="my_name">Sidramesh Patil</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section ------------------------------------------------------------------------------------>
+    <section class="skills">
+        <div class="container skills_container">
+            <h1 style="text-align: center;">My Skills</h1>
+            <div class="skill_bars">
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/c.jpg" alt="">
+                    <div class="skill_container">
+                        <div class="skill c">C - 90%</div>
+                    </div>
+                </div>
+
+
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/html.png" alt="">
+                    <div class="skill_container">
+                        <div class="skill HTML">HTML - 90%</div>
+                    </div>
+                </div>
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/css.img" alt="">
+                    <div class="skill_container">
+                        <div class="skill CSS">CSS - 85%</div>
+                    </div>
+                </div>
+
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/javascript.png" alt="">
+                    <div class="skill_container">
+                        <div class="skill JavaScript">JavaScript - 90%</div>
+                    </div>
+                </div>
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/java.jpg" alt="">
+                    <div class="skill_container">
+                        <div class="skill Java">Java - 80%</div>
+                    </div>
+                </div>
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/node.jpg" alt="">
+                    <div class="skill_container">
+                        <div class="skill Node">Node.js - 80%</div>
+                    </div>
+                </div>
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/express.jpg" alt="">
+                    <div class="skill_container">
+                        <div class="skill Express">Express.js - 75%</div>
+                    </div>
+                </div>
+
+                <div class="skill_containers_parent">
+                    <img class="skill_image" src="images/mongodb.jpg" alt="">
+                    <div class="skill_container">
+                        <div class="skill MongoDB">MongoDB - 60%</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects_section">
+
+        <div class="container project_container">
+            <h1>My Projects</h1>
+            <div class="projects">
+                <div class="project_item">
+                   <a href="https://github.com/sidrameshpatil/Stock-alerts">
+                    <img class="project_image" src="images/stock_project.jpg" alt="">
+                    <h3 class="project_title">Intra-day Trading Alerts</h3>
+                </a>
+                </div>
+                
+                <div class="project_item">
+                    <a href="https://github.com/sidrameshpatil/SocketIoChat">
+                    <img class="project_image" src="images/chat_app.jpg" alt="">
+                    <h3 class="project_title">Realtime Chat App</h3>
+                    </a>
+                </div>
+
+                <div class="project_item">
+                    <a href="https://github.com/sidrameshpatil/CoronaInteractiveMap">
+                    <img class="project_image" src="images/corona_map.jpg" alt="">
+                    <h3 class="project_title">Interactive Corona World Map</h3>
+                    </a>
+                </div>
+                <div class="project_item">
+                   
+                    <img onClick="notify(this)" class="project_image" src="images/arduino.jpg" alt="">
+                    <h3 class="project_title">Environment Monitoring System</h3>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container contact_container">
+
+            <div class="primary_contacts">
+                <h1>Contact Me</h1>
+                <div class="contact_item">
+                    <p class="contact_keys">Email</p>
+                    <p class="contact_values">sidrameshpatil569@gmail.com</p>
+                </div>
+                <div class="contact_item">
+                    <p class="contact_keys">Phone</p>
+                    <p class="contact_values">+91-8152007238</p>
+                </div>
+                <div class="contact_item">
+                    <p class="contact_keys">Address</p>
+                    <p class="contact_values">Choodi Galli, Old Town, Bhalki, 585328<br> Bidar, Karnataka<br>India</p>
+                </div>
+            </div>
+            <div class="secondary_contacts_container">
+            <div class="secondary_contacts">
+               <a class="secondary_contact_link" href="https://www.linkedin.com/in/sidramesh-p-013990117/"> <img style="filter: invert(100%);" src="images/linkedin.png" alt="" class="secondary_contact"></a>
+               <a class="secondary_contact_link" href="https://www.instagram.com/sidramesh_patil/"> <img style="filter: invert(100%);" src="images/instagram.png" alt="" class="secondary_contact"></a>
+               <a class="secondary_contact_link" href="https://github.com/sidrameshpatil"> <img style="filter: invert(100%);" src="images/github.png" alt="" class="secondary_contact"></a>
+               <a class="secondary_contact_link" href="https://twitter.com/sidramesh_patil"> <img style="filter: invert(100%);" src="images/twitter.png" alt="" class="secondary_contact"></a>
+               <a class="secondary_contact_link" href="https://www.facebook.com/profile.php?id=100008573591833"> <img style="filter: invert(100%);" src="images/facebook.png" alt="" class="secondary_contact"></a>
+               
+            </div>
+            <div class="download_resume">
+                <h1 class="resume_text"><a style="color:dodgerblue;" class="resume_link" href="https://drive.google.com/file/d/1TJchGJJlLZtDphLgYvZG9VGkoGEj-SBf/view?usp=sharing">Download my Resume</a> </h1>
+                 
+            </div>
+            
+        </div>
+
+        </div>
+    </section>
+
+     
+        <h3 class="footer" style="text-align: center;">This page created using plain <span style="color:dodgerblue;">HTML</span> and <span style="color:dodgerblue;">CSSS</span> by <br><span style="font-size:1.5em;">Sidramesh Patil</span></h3>
+   
+
+</body>
+
+</html>
